@@ -1,0 +1,9 @@
+円周率を様々な方法で近似するプログラムです。
+以下の公式やアルゴリズムを用いています。
+
+Vieteの公式
+Wallisの公式
+Brounkerの公式
+MOnteCalro法
+Ramanujanの公式
+Gauss=Legendreのアルゴリズム
