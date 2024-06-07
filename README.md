@@ -4,7 +4,7 @@
 1.Vieteの公式  
 2.Wallisの公式  
 3.Brounkerの公式  
-4.MOnteCalro法  
+4.MonteCalro法  
 5.Ramanujanの公式  
 6.Gauss=Legendreのアルゴリズム  
 
