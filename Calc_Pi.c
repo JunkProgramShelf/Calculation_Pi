@@ -17,7 +17,7 @@ double my_sqrt(double n);
 double my_pow(double n,unsigned int x);
 double factorical(double n);
 double Infinity_radical_sign(double x,int n);
-double Viete();
+double Viete(int n);
 double Wallis(int n);
 double Brouncker(int n);
 double Monte_Calro_Method(int n);
@@ -40,7 +40,7 @@ int main(){
 	printf("\n");
 	printf("<==============================================================>\n");
 	printf("Calculated of formula in approximation up to 100th(n=100) order.\n");
-	printf("Viete\'s rule:::::::Pi=%.10lf\n",Viete());
+	printf("Viete\'s rule:::::::Pi=%.10lf\n",Viete(N));
 	printf("Wallis\'s Product:::Pi=%.10lf\n",Wallis(N));
 	printf("Brouncker\'s rule:::Pi=%.10lf\n",Brouncker(N));
 	printf("Monte Calro Method:Pi=%.10lf\n",Monte_Calro_Method(N));
@@ -96,11 +96,11 @@ double Infinity_radical_sign(double x,int n){
 }
 
 //Viet's role
-double Viete(){
+double Viete(int n){
 	int i=0;
 	double p=1;
 	double data=0;
-	for(i=1;i<=N;i++){
+	for(i=1;i<=n;i++){
 		p *= 2/Infinity_radical_sign(2,i);
 	}
 	p= p * 2;
